@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+
+    tools:context=".NumberOrderingActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backBT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        app:icon="@drawable/baseline_arrow_back_ios_24"
+        app:iconGravity="textEnd"
+        app:iconSize="25dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/page_margin_top_2"
+        app:layout_constraintEnd_toStartOf="@+id/page_margin_leftside_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/numberorderingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/irish_grover"
+        android:text="Numbers Ordering"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/page_margin_rightside_1"
+        app:layout_constraintStart_toStartOf="@+id/page_margin_leftside_1"
+        app:layout_constraintTop_toTopOf="@+id/page_margin_top_1" />
+
+    <TextView
+        android:id="@+id/numberorderingdesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/wellfleet"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:text="Challenge yourself to arrange random numbers in either ascending or descending order, sharpening your skills in numerical sequencing. Simply select the numbers provided in the correct sequence to match either the \'smallest to largest\' or \'largest to smallest\' order."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/page_margin_rightside_1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/page_margin_leftside_1"
+        app:layout_constraintTop_toBottomOf="@+id/numberorderingTV" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_num1"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="15"
+        android:text="Num 1"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/page_margin_verticalcenter_1"
+        app:layout_constraintEnd_toStartOf="@+id/bt_num2"
+        app:layout_constraintStart_toStartOf="@+id/page_margin_leftside_1"
+        app:layout_constraintTop_toTopOf="@+id/bt_num2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_num2"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="15"
+        android:text="Num 2"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/page_margin_verticalcenter_1"
+        app:layout_constraintEnd_toStartOf="@+id/page_margin_rightside_1"
+        app:layout_constraintStart_toStartOf="@+id/page_margin_leftside_1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_num3"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="15"
+        android:text="Num 3"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/page_margin_verticalcenter_1"
+        app:layout_constraintEnd_toStartOf="@+id/page_margin_rightside_1"
+        app:layout_constraintStart_toEndOf="@+id/bt_num2"
+        app:layout_constraintTop_toTopOf="@+id/bt_num2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_num4"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="15"
+        android:text="Num 4"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_num2"
+        app:layout_constraintStart_toStartOf="@+id/bt_num1"
+        app:layout_constraintTop_toBottomOf="@+id/bt_num1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_num5"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="15"
+        android:text="Num 5"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_num3"
+        app:layout_constraintStart_toEndOf="@+id/bt_num2"
+        app:layout_constraintTop_toTopOf="@+id/page_margin_verticalcenter_1" />
+
+    <TextView
+        android:id="@+id/tv_sortOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/quattrocento_sans"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="15"
+        android:text="sort_order"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_userInput"
+        app:layout_constraintEnd_toEndOf="@+id/bt_num5"
+        app:layout_constraintStart_toStartOf="@+id/bt_num4"
+        app:layout_constraintTop_toBottomOf="@+id/bt_num2" />
+
+    <TextView
+        android:id="@+id/tv_userInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/greyable_text"
+        android:hint="Your answer here"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/greyish_white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_submit"
+        app:layout_constraintEnd_toEndOf="@+id/bt_submit"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/bt_submit" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT ANSWER"
+        android:fontFamily="@font/press_start_2p"
+        android:paddingTop="12dp"
+        android:backgroundTint="#0000"
+        app:layout_constraintBottom_toTopOf="@+id/page_margin_bottom_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/restart_bt"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="Play again?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_userInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sortOrder" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/page_margin_top_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/page_margin_leftside_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/page_margin_rightside_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/page_margin_verticalcenter_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/page_margin_bottom_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/page_margin_top_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.059483726" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/page_margin_leftside_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="57dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
